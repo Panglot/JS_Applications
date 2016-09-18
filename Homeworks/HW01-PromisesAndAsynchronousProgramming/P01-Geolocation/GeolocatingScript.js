@@ -1,6 +1,5 @@
-/**
- * Created by Panglot on 18-Sep-16.
- */
+/* Since April 2016 Chrome requires secure origin to allow getting Geolocation.
+ * You have to open the program on local server or with different browser. */
 (function Geolocator() {
     let GeolocationPromise = new Promise(function (resolve, reject) {
         return navigator.geolocation.getCurrentPosition(function (geo) {
