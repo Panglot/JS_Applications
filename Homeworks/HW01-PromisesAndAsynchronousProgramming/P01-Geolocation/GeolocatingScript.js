@@ -1,7 +1,7 @@
 /* Since April 2016 Chrome requires secure origin to allow getting Geolocation.
  * You have to open the program on local server or with different browser. */
 (function Geolocator() {
-    let GeolocationPromise = new Promise(function (resolve, reject) {
+    let geolocationPromise = new Promise(function (resolve, reject) {
         return navigator.geolocation.getCurrentPosition(function (geo) {
             let currentLocation = {
                     lat: null,
@@ -22,5 +22,5 @@
         loadingLocation.src = googleApiLoadingLink;
     }
 
-    GeolocationPromise.then((loadMap));
+    geolocationPromise.then((loadMap));
 })();
