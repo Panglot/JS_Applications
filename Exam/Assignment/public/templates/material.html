@@ -1,0 +1,53 @@
+<div class="row">
+    {{#with result}}
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="thumbnail">
+            <div class="caption">
+                <h1 class="text-center" style="font-family: 'Arial Bold'">{{title}}</h1>
+            </div>
+            <img src="{{img}}" alt="">
+            <div class="caption">
+                <br>
+                <br>
+                <p style="font-size: 1.2em">{{description}}</p>
+                <br>
+                <br>
+                <p style="font-style: italic; font-size: 0.9em">Created on: "{{createdOn}}" by <span style="font-weight: bold">{{user.username}}</span> </p>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2 class="page-header">Comments {{commentsCount}}</h2>
+                            <section class="comment-list">
+                                {{#each comments}}
+                                <article class="row">
+                                    <div class="col-md-2 col-sm-2 hidden-xs">
+                                        <figure class="thumbnail">
+                                            <figcaption class="text-center">{{user.username}}</figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-10 col-sm-10">
+                                        <div class="panel panel-default arrow left">
+                                            <div class="panel-body">
+                                                <div class="comment-post">
+                                                    <p> {{text}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                {{/each}}
+                                <article id ="comment-box"  class="row" style="display: none">
+                                    <input id="post-comment-input" class="col-md-11 col-sm-11" placeholder="Leave a comment">
+                                    </input>
+                                    <a id="post-button" class="btn btn-primary navbar-right">Post</a>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+</div>

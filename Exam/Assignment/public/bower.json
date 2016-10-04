@@ -1,0 +1,20 @@
+{
+  "name": "learning-resources",
+  "description": "Application for sharing, recomending and browsing learning resources",
+  "main": "app.js",
+  "authors": ["Dobromir Bogatev"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "navigo": "^3.0.0",
+    "handlebars": "^4.0.5"
+  }
+}
