@@ -142,7 +142,15 @@
       "description": "description of book #$i",
       "createdOn": "2016-09-28T12:50:14.992Z",
       "rating": 0,
-      "comments": [],
+      "comments": [
+        {
+          "text": "asd",
+          "user": {
+            "id": "8ab8704f-d1e9-4e98-9e60-d70d43d1e3f0",
+            "username": "Panglot"
+          }
+        }
+      ],
       "user": {
         "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
         "username": "Doncho"
@@ -250,6 +258,20 @@
         },
         {
           "text": "chep",
+          "user": {
+            "id": "8ab8704f-d1e9-4e98-9e60-d70d43d1e3f0",
+            "username": "Panglot"
+          }
+        },
+        {
+          "text": "Raboti",
+          "user": {
+            "id": "8ab8704f-d1e9-4e98-9e60-d70d43d1e3f0",
+            "username": "Panglot"
+          }
+        },
+        {
+          "text": "asfasdf",
           "user": {
             "id": "8ab8704f-d1e9-4e98-9e60-d70d43d1e3f0",
             "username": "Panglot"
